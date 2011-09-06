@@ -70,8 +70,6 @@ YUI.add("charrousel-widget", function(Y) {
                 },
                 pages, i, il, node;
             
-            t.set("show.pages", show.pages && t._pages > 1);
-            
             //build pagination control if requested
             if(t._pages > 1 && (show.pages || show.next || show.prev)) {
                 show.next && (output.next = Y.Lang.sub(t.TEMPLATES.NEXT, { 
