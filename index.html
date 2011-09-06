@@ -160,25 +160,27 @@
         };
 
         YUI().use("charrousel-widget", "charrousel-fade", "charrousel-slide", "charrousel-timer", function(Y) {
-            new Y.Charrousel({
-                srcNode : "#sliding",
-                render : true,
-                visible : 3,
-                plugins : Y.CharrouselSlide
-            });
+            Y.on("domready", function() {
+                new Y.Charrousel({
+                    srcNode : "#sliding",
+                    render : true,
+                    visible : 3,
+                    plugins : Y.CharrouselSlide
+                });
 
-            new Y.Charrousel({
-                srcNode : "#fading",
-                render : true,
-                plugins : Y.CharrouselFade
-            });
+                new Y.Charrousel({
+                    srcNode : "#fading",
+                    render : true,
+                    plugins : Y.CharrouselFade
+                });
 
-            new Y.Charrousel({
-                srcNode : "#wrapping",
-                render : true,
-                visible : 3,
-                circular : true,
-                plugins : Y.CharrouselSlide
+                new Y.Charrousel({
+                    srcNode : "#wrapping",
+                    render : true,
+                    visible : 3,
+                    circular : true,
+                    plugins : Y.CharrouselSlide
+                });
             });
 
         });
