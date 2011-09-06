@@ -1,0 +1,47 @@
+html { margin-top: 1.0em; background-color: #242424; font-family: Helvetica, Arial, FreeSans, san-serif; color: #F6F3E8; }
+h1, h2, h3 { color: #8AC6F2; font-weight: bold; }
+h1 { font-size: 60px; margin-bottom: 3px; }
+h1 .small { font-size: 24px; }
+h1 a { text-decoration: none }
+h2 { font-size: 24px; }
+h3 { text-align: center; }
+a { color: #CAE682; }
+p { margin: 16px 0; }
+pre { background: #000; color: #fff; padding: 15px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+
+#container { margin: 0 auto; width: 700px; }
+
+.description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic; }
+.download { float: right; }
+.footer { text-align:center; padding-top:30px; font-style: italic; }
+
+
+.single,
+.multiple { margin-bottom: 50px; }
+
+.yui3-charrousel-item { width: 50px; height: 50px; position: absolute; top: -500px; }
+.yui3-charrousel-item-current,
+.yui3-charrousel-item-hiding { top: 0; }
+
+.yui3-charrousel-nav { margin-top: 5px; text-align: center; }
+.yui3-charrousel-nav button { padding: 2px 4px; border: 1px solid #000; margin: 0 1px; background: #FFF; cursor: pointer; }
+.yui3-charrousel-nav button:disabled { color: #CCC; background: #666; }
+.yui3-charrousel-page-current button { color: #FFF; background: #000; }
+
+.single { width: 150px; overflow: hidden; position: relative; }
+.single .yui3-charrousel-list { height: 50px; }
+.single .yui3-charrousel-item { width: 150px; background: #666; }
+
+.slide .yui3-charrousel-item { position: static; top: 0; }
+
+.multiple { width: 154px; overflow: hidden; position: relative; }
+.multiple .yui3-charrousel-item { background: #777; margin-left: 2px; }
+.multiple .yui3-charrousel-item-page-first { margin-left: 0; }
+.multiple .yui3-charrousel-item-current,
+.multiple .yui3-charrousel-item-hiding { position: static; }
+
+.multiple.slide { width: 159px; }
+.multiple.slide .yui3-charrousel-item { margin-left: 5px; background: green; }
+.multiple.slide .yui3-charrousel-item-page-first { margin-left: 2px; background: red; }
+.multiple.slide .yui3-charrousel-item-page-last { margin-right: 2px; background: yellow; }
