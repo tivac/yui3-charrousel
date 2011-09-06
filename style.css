@@ -8,6 +8,7 @@ h3 { text-align: center; }
 a { color: #CAE682; }
 p { margin: 16px 0; }
 pre { background: #000; color: #fff; padding: 15px; }
+.gist pre { color: #000; }
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 
 #container { margin: 0 auto; width: 700px; }
@@ -20,7 +21,8 @@ hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 .single,
 .multiple { margin-bottom: 50px; }
 
-.yui3-charrousel-item { width: 50px; height: 50px; position: absolute; top: -500px; }
+.yui3-charrousel-item { width: 100px; height: 100px; position: absolute; top: -500px;
+                        text-align: center; line-height: 100px; color: #384048; font-weight: bold; }
 .yui3-charrousel-item-current,
 .yui3-charrousel-item-hiding { top: 0; }
 
@@ -30,18 +32,17 @@ hr { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 .yui3-charrousel-page-current button { color: #FFF; background: #000; }
 
 .single { width: 150px; overflow: hidden; position: relative; }
-.single .yui3-charrousel-list { height: 50px; }
+.single .yui3-charrousel-list { height: 100px; }
 .single .yui3-charrousel-item { width: 150px; background: #666; }
 
 .slide .yui3-charrousel-item { position: static; top: 0; }
 
-.multiple { width: 154px; overflow: hidden; position: relative; }
-.multiple .yui3-charrousel-item { background: #777; margin-left: 2px; }
-.multiple .yui3-charrousel-item-page-first { margin-left: 0; }
+.multiple { width: 300px; overflow: hidden; position: relative; }
+.multiple .yui3-charrousel-item { background: #777; }
 .multiple .yui3-charrousel-item-current,
 .multiple .yui3-charrousel-item-hiding { position: static; }
 
-.multiple.slide { width: 159px; }
-.multiple.slide .yui3-charrousel-item { margin-left: 5px; background: green; }
-.multiple.slide .yui3-charrousel-item-page-first { margin-left: 2px; background: red; }
-.multiple.slide .yui3-charrousel-item-page-last { margin-right: 2px; background: yellow; }
+.multiple.slide { width: 300px; }
+.multiple.slide .yui3-charrousel-item { background: #95E454; }
+.multiple.slide .yui3-charrousel-item-page-first { background: #E5786D; }
+.multiple.slide .yui3-charrousel-item-page-last { background: #8AC6F2; }

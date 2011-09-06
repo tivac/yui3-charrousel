@@ -83,6 +83,11 @@
             </ol>
         </div>
 
+        <h2>Usage</h2>
+        <p>
+            <script src="https://gist.github.com/1198453.js?file=gistfile1.js"></script>
+        </p>
+
         <h2>Download</h2>
         <p>
             You can download this project in either
@@ -154,7 +159,29 @@
             }
         };
 
-        YUI().use("charrousel-widget", "charrousel-fade", "charrousel-slide", "charrousel-timer", function(Y) { });
+        YUI().use("charrousel-widget", "charrousel-fade", "charrousel-slide", "charrousel-timer", function(Y) {
+            new Y.Charrousel({
+                srcNode : "#sliding",
+                render : true,
+                visible : 3,
+                plugins : Y.CharrouselSlide
+            });
+
+            new Y.Charrousel({
+                srcNode : "#fading",
+                render : true,
+                plugins : Y.CharrouselFade
+            });
+
+            new Y.Charrousel({
+                srcNode : "#wrapping",
+                render : true,
+                visible : 3,
+                circular : true,
+                plugins : Y.CharrouselSlide
+            });
+
+        });
     </script>
 </body>
 </html>
